@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .articles {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .article {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .article h2 {
+            margin-top: 0;
+        }
+        .article small {
+            color: #555;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f1f1f1;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>World News Today</h1>
+    </header>
+
+    <div class="container">
+        <!-- Articles Section -->
+        <div class="articles">
+            <!-- Article 1 -->
+            <div class="article">
+                <h2>The Best Foods Around the World</h2>
+                <small>Published on September 24, 2024</small>
+                <p>
+                    Traveling the world is a culinary adventure like no other. From the aromatic spices of India to the savory delicacies of Italy, 
+                    the world offers a diverse range of flavors that tantalize the senses. In this article, we explore some of the most popular dishes that 
+                    food enthusiasts should try, including sushi from Japan, tacos from Mexico, and pasta from Italy.
+                </p>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="article">
+                <h2>War Situation in Kiev: Latest Updates</h2>
+                <small>Published on September 23, 2024</small>
+                <p>
+                    The ongoing conflict in Kiev has escalated over the past few weeks. Recent reports indicate heavy fighting in key areas, 
+                    with both sides suffering significant losses. International organizations are urging a ceasefire, and diplomatic negotiations 
+                    are underway to find a peaceful resolution. However, the situation remains tense, and civilians are continuing to flee the affected regions.
+                </p>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="article">
+                <h2>New iPhone Release: What's New?</h2>
+                <small>Published on September 21, 2024</small>
+                <p>
+                    Apple has just unveiled its latest iPhone model, featuring a groundbreaking new design, improved camera functionality, and 
+                    enhanced performance. The new iPhone comes with an A18 chip, a ProMotion display, and advanced battery optimization features. 
+                    Pre-orders have already begun, and tech enthusiasts are eagerly awaiting its release in stores next month.
+                </p>
+            </div>
+        </div>
+
+        <!-- Sidebar Section -->
+        <aside class="sidebar">
+            <h3>Featured Articles</h3>
+            <ul>
+                <li><a href="#">The Future of Renewable Energy</a></li>
+                <li><a href="#">Understanding Blockchain Technology</a></li>
+                <li><a href="#">The Role of Social Media in Society</a></li>
+                <li><a href="#">Innovations in Medical Science</a></li>
+                <li><a href="#">Traveling in the Post-Pandemic World</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 News Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Experiences - Share Your Story</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .post {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .post h2 {
+            margin-top: 0;
+        }
+        .post small {
+            color: #555;
+        }
+        .comments {
+            margin-top: 20px;
+        }
+        .comment {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-left: 4px solid #007BFF;
+        }
+        blockquote {
+            font-style: italic;
+            margin: 0;
+        }
+        .comment-form {
+            margin-top: 20px;
+        }
+        .comment-form h3 {
+            margin-bottom: 10px;
+        }
+        .comment-form input, .comment-form textarea, .comment-form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .comment-form button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .comment-form button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f1f1f1;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Travel Experiences - Share Your Story</h1>
+        <p>Sharing my travel stories and adventures</p>
+    </header>
+
+    <div class="container">
+        <!-- Blog Post 1 -->
+        <div class="post">
+            <h2>Exploring the Ancient Temples of Angkor Wat</h2>
+            <small>Published on September 24, 2024 by Đỗ Lan Anh</small>
+            <p>
+                Visiting Angkor Wat was a dream come true. The grandeur of the ancient temples and their intricate carvings left me in awe. 
+                I spent hours wandering through the ruins, soaking in the history and beauty of the site. The sunrise over Angkor Wat is an experience I will never forget.
+            </p>
+
+            <!-- Comments Section -->
+            <div class="comments">
+                <h3>Comments:</h3>
+                <div class="comment">
+                    <blockquote>"I've always wanted to visit Angkor Wat! Your description is inspiring." - Alice</blockquote>
+                </div>
+
+                <!-- Comment Form -->
+                <div class="comment-form">
+                    <h3>Add a Comment:</h3>
+                    <form action="/submit-comment" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <textarea name="comment" rows="3" placeholder="Your Comment" required></textarea>
+                        <button type="submit">Submit Comment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="post">
+            <h2>A Culinary Journey Through Italy</h2>
+            <small>Published on September 20, 2024 by Dora Chan</small>
+            <p>
+                Italy is a food lover's paradise. From the streets of Florence to the canals of Venice, every meal was a delight. 
+                I savored authentic pasta, gelato, and of course, pizza. Each dish told a story of its own, and I felt like I was part of the rich culinary tradition.
+            </p>
+
+            <!-- Comments Section -->
+            <div class="comments">
+                <h3>Comments:</h3>
+                <div class="comment">
+                    <blockquote>"Italy sounds amazing! I need to plan a trip soon." - Chris</blockquote>
+                </div>
+
+                <!-- Comment Form -->
+                <div class="comment-form">
+                    <h3>Add a Comment:</h3>
+                    <form action="/submit-comment" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <textarea name="comment" rows="3" placeholder="Your Comment" required></textarea>
+                        <button type="submit">Submit Comment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Personal Blog. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

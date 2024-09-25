@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page - Innovative Smartwatch</title>
     <style>
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -12,92 +13,159 @@
             box-sizing: border-box;
             background-color: #f8f9fa;
         }
+
+        /* Header Styles */
         header {
             background-color: #007BFF;
             color: white;
             text-align: center;
             padding: 50px 0;
         }
+
         header h1 {
             font-size: 48px;
             margin: 0;
         }
+
+        header p {
+            font-size: 24px;
+        }
+
+        /* Container for Content */
         .container {
             padding: 20px;
             max-width: 1200px;
             margin: auto;
         }
+
+        /* Product Description */
         .product-description {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             margin-bottom: 50px;
         }
+
         .product-description img {
             max-width: 50%;
             height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
-        .product-description figcaption {
-            text-align: center;
-            margin-top: 10px;
-            font-style: italic;
-        }
-        .features {
-            margin-bottom: 50px;
-        }
-        .features h2 {
-            font-size: 32px;
-        }
-        ul, ol {
+
+        .description {
+            max-width: 500px;
             margin-left: 20px;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
+
+        .description h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        /* Key Features */
+        .features {
             margin-bottom: 50px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
-        table, th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-        th {
-            background-color: #007BFF;
-            color: white;
+
+        .features h2 {
             text-align: center;
-        }
-        .contact-form {
-            margin-bottom: 50px;
-        }
-        .contact-form h2 {
             font-size: 32px;
             margin-bottom: 20px;
         }
+
+        ul {
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            margin-bottom: 50px;
+        }
+
+        .pricing h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: auto;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            margin-bottom: 50px;
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
         .contact-form form {
             display: flex;
             flex-direction: column;
             max-width: 600px;
             margin: auto;
         }
-        .contact-form input, .contact-form textarea, .contact-form button {
+
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form button {
             padding: 10px;
             margin-bottom: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
             font-size: 16px;
         }
+
         .contact-form button {
             background-color: #007BFF;
             color: white;
             border: none;
             cursor: pointer;
+            transition: background-color 0.3s;
         }
+
         .contact-form button:hover {
             background-color: #0056b3;
         }
+
+        /* Footer */
         footer {
             text-align: center;
             padding: 20px 0;
             background-color: #f1f1f1;
+        }
+
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
@@ -114,12 +182,12 @@
         <section class="product-description">
             <figure>
                 <img src="pixel-fold-430.jpg" alt="Innovative Smartwatch">
-                <figcaption>The Innovative Smartwatch - Stay Connected, Stay Healthy</figcaption>
             </figure>
             <div class="description">
                 <h2>About the Smartwatch</h2>
                 <p>
-                    The Innovative Smartwatch is designed to keep you connected and track your fitness goals. With a sleek design and advanced technology, it allows you to monitor your health metrics, receive notifications, and much more—all from your wrist.
+                    The Innovative Smartwatch is designed to keep you connected and track your fitness goals. With a sleek design and advanced technology, 
+                    it allows you to monitor your health metrics, receive notifications, and much more—all from your wrist.
                 </p>
             </div>
         </section>

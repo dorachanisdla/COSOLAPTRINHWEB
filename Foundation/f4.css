@@ -1,0 +1,49 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Light background color */
+}
+
+/* Style the container to arrange the images */
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Space between images */
+    padding: 20px; /* Padding around the container */
+    max-width: 800px; /* Max width of the container */
+    margin: auto; /* Center the container */
+}
+
+/* Style for avatar images */
+.avatar {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Aesthetic hover effect */
+.avatar:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+}
+
+/* Specific styles for proportioned and distorted images */
+.proportioned {
+    width: 300px; /* Width for proportioned avatar */
+}
+
+.distorted {
+    width: 200px; /* Width for distorted avatar */
+    height: 400px; /* Height for distorted avatar */
+}
+
+.original-proportioned {
+    width: 300px; /* Width for original proportioned image */
+}
+
+.original-distorted {
+    width: 200px; /* Width for original distorted image */
+    height: 400px; /* Height for original distorted image */
+}

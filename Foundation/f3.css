@@ -1,0 +1,19 @@
+/* Common styles for both buttons */
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Specific styles for the "Click Me No" button */
+.button-no {
+    background-color: red;
+    color: white;
+}
+
+/* Specific styles for the "Click Me" button */
+.button-yes {
+    background-color: green;
+    color: white;
+}

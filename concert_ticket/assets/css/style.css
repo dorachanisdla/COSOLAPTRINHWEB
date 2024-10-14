@@ -647,11 +647,12 @@ button {
     text-transform: uppercase; /* Chữ hoa */
     padding: 18px; /* Khoảng cách bên trong cho nút */
     cursor: pointer; /* Con trỏ khi hover */
-    transition: opacity 0.4s ease; /* Thêm hiệu ứng chuyển đổi mượt mà */
+    transition: all 0.3s ease; /* Tạo hiệu ứng mượt khi hover */
 }
 
 #buy-tickets:hover {
-    opacity: 0.9; /* Độ trong suốt khi hover */
+    transform: scale(0.95); /* Thu nhỏ nút một chút */
+    opacity: 0.9; /* Giảm độ trong suốt khi hover */
 }
 
 

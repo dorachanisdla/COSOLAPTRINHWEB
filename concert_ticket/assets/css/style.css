@@ -428,7 +428,7 @@ html {
     border-radius: 4px;
     cursor: pointer;
     margin-top: 10px;
-    transition: background-color 0.3s; /* Hiệu ứng cho nút */
+    
 }
 
 .btn:hover {
@@ -639,7 +639,7 @@ button {
 }
 
 #buy-tickets {
-    background: #009688; /* Màu nền cho nút mua vé */
+    background: #009688; /* Màu nền cho nút */
     border: none; /* Không có đường viền */
     color: #fff; /* Màu chữ cho nút */
     width: 100%; /* Chiều rộng 100% */
@@ -647,11 +647,14 @@ button {
     text-transform: uppercase; /* Chữ hoa */
     padding: 18px; /* Khoảng cách bên trong cho nút */
     cursor: pointer; /* Con trỏ khi hover */
+    transition: opacity 0.4s ease; /* Thêm hiệu ứng chuyển đổi mượt mà */
 }
 
 #buy-tickets:hover {
     opacity: 0.9; /* Độ trong suốt khi hover */
 }
+
+
 
 .modal-footer {
     padding: 16px; /* Khoảng cách bên trong cho footer */

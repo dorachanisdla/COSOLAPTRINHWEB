@@ -253,6 +253,7 @@ html {
     margin-top: 25px;
     font-style: italic;
     opacity: 0.6;
+    margin-bottom: 25px;
 }
 
 #content .about-text {
@@ -281,10 +282,11 @@ html {
 
 .member-img {
     width: 150px; 
-    height: auto; 
+    height: 150px; /* Đặt chiều cao thành 150px */
+    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
     border-radius: 4px; 
     cursor: pointer; 
-    transition: transform 0.3s; 
+    transition: transform 0.3s;   
 }
 
 .member-img:hover {
@@ -322,6 +324,7 @@ html {
     color: white; 
     font-size: 30px; 
     text-decoration: none; 
+    
 }
 
 /* Tour section */
@@ -332,6 +335,7 @@ html {
     background-color: #fff;
     margin-top: 40px;
     list-style: none;
+    border-radius: 10px;
 }
 
 .tickets-list li {
@@ -347,6 +351,7 @@ html {
     color: #fff;
     padding: 3px 4px;
     margin-left: 16px;
+    border-radius: 10px;
 }
 
 .tickets-list .quantity {
@@ -440,24 +445,14 @@ html {
     border-radius: 8px; /* Bo góc */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
     margin-top: 40px; /* Khoảng cách phía trên */
-  
-}
-
-/* Căn giữa thông tin liên hệ */
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px; /* Khoảng cách với các trường nhập */
     
 }
+
+
 
 /* Các trường nhập thông tin */
 .contact-form {
     font-size: 15px;
-    
 }
 
 .contact-form .form-group {
@@ -474,20 +469,96 @@ html {
     padding: 10px;
     border: 1px solid #ccc;
     width: 100%; /* Đảm bảo chiều rộng đầy đủ */
+    border-radius: 10px; /* Bo góc cho các trường nhập */
+    transition: border-color 0.3s; /* Hiệu ứng chuyển màu viền */
+}
+
+.contact-form .form-control:focus {
+    border-color: #009688; /* Màu viền khi trường được chọn */
+    outline: none; /* Bỏ outline mặc định */
 }
 
 /* Nút gửi */
-.contact-submit-btn {
-    background-color: #009688; /* Màu nền cho nút gửi */
-    color: #ffffff; /* Màu chữ trắng */
-    padding: 10px 20px; /* Khoảng cách bên trong nút */
-    border: none; /* Bỏ viền */
-    cursor: pointer; /* Con trỏ chuột khi hover */
-}
-
-.contact-submit-btn:hover {
-    opacity: 0.9; /* Hiệu ứng hover */
-}
+/* From Uiverse.io by Saad3092003 */ 
+button {
+    font-family: inherit;
+    font-size: 18px;
+    background: linear-gradient(to bottom, #4dc7d9 0%,#66a6ff 100%);
+    color: white;
+    padding: 0.8em 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+    margin: 0 auto; /* Căn giữa nút */
+    margin-bottom: 32px;
+    
+  }
+  
+  button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    padding: 0em;
+    background: linear-gradient(to bottom, #5bd9ec 0%,#97c3ff 100%);
+    cursor: pointer;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  button span {
+    display: block;
+    margin-left: 0.4em;
+    transition: all 0.3s;
+  }
+  
+  button:hover span {
+    scale: 0;
+    font-size: 0%;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  
+  button svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+    transition: all 0.3s;
+  }
+  
+  button .svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s;
+  }
+  
+  button:hover .svg-wrapper {
+    background-color: rgba(43, 169, 228, 0.897);
+    width: 54px;
+    height: 54px;
+  }
+  
+  button:hover svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    transform: rotate(45deg);
+  }
+  
+  
+  
+  
+  
 
 
 
@@ -608,33 +679,37 @@ html {
     width: 100%;
 }
 
-/* Footer section */
+/* Căn giữa thông tin liên hệ */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px; /* Khoảng cách với các trường nhập */
+    margin-top: 20px;
+}
+
 #footer {
-    padding: 64px 16px;
-    text-align: center;
+    background-color: #f8f8f8; /* Màu nền cho footer */
+    padding: 20px; /* Khoảng cách bên trong */
+    text-align: center; /* Canh giữa nội dung */
+    position: relative; /* Đặt vị trí tương đối */
 }
 
-#footer .social-list {
-    font-size: 24px;
+.copyright {
+    font-size: 16px; /* Kích thước chữ cho copyright */
+    color: #555; /* Màu chữ */
 }
 
-#footer .social-list a {
-    color: rgba(0, 0, 0, 0.6);
-    text-decoration: none;
+.copyright a {
+    color: #007BFF; /* Màu cho liên kết */
+    text-decoration: none; /* Bỏ gạch chân */
 }
 
-#footer .coppyright a:hover,
-#footer .social-list a:hover {
-    color: rgba(0, 0, 0, 0.4);
+.copyright a:hover {
+    text-decoration: underline; /* Gạch chân khi di chuột qua */
 }
 
-#footer .coppyright {
-    margin-top: 15px;
-    color: rgba(0, 0, 0, 0.6);
-}
-
-#footer .coppyright a{
-    color: rgba(0, 0, 0, 0.6);
-}
 
 /* Tablet */
